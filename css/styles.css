@@ -41,7 +41,9 @@ body {
     margin: 0;
     box-sizing: border-box;
 }
-
+a{
+    text-decoration: none;
+}
 .section{
     margin-bottom: 40px;
 }
@@ -72,8 +74,6 @@ body {
     right: 0;
 }
 
-
-
 .info-row{
     padding: 5px 0;
 }
@@ -98,4 +98,46 @@ body {
 .col-8{
     display: inline-block;
     width: 69%;
+}
+
+/* CSS banner */
+.banner{
+    position: relative;
+    background-image: url('../images/home-bg.jpg');   
+    height: 300px;
+}
+.banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.banner__title{
+    position: absolute;
+    font-family: arial, sans-serif, tahoma;
+    top: 50%;
+    left: 50%;
+}
+
+/* CSS Nav */
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+nav * {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+nav >*:hover{
+    background-color: #2ab4d3;
+    color: #fff;
 }
