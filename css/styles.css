@@ -1,6 +1,7 @@
 body {
-    padding: 0px;
+    
     margin: 0px;
+    
 }
 
 .cv-document {
@@ -33,4 +34,68 @@ body {
     position: relative;
 
     padding: 40px
+}
+/* CSS general */
+*{
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.section{
+    margin-bottom: 40px;
+}
+.section-title{
+    padding-bottom: 5px;
+    border-bottom: 3px solid #0e2425;
+}
+.section-content{
+    padding: 20px 0;
+}
+.section-content p{
+    padding: 3px 0;
+}
+
+/* CSS info */
+
+#info{
+    position: relative;
+}
+#info h1{
+    color: #0e2425;
+    padding: 5px 0;
+    border-bottom: none;
+}
+#info img{
+    position: absolute;
+    width: 113px;
+    right: 0;
+}
+
+
+
+.info-row{
+    padding: 5px 0;
+}
+
+.info-row > b{
+    display: inline-block;
+    width: 100px;
+}
+
+/* CSS content */
+.row{
+    border-bottom: 0.5px solid grey;
+    padding-top: 10px;
+    padding-bottom: 15px;
+
+}
+.col-4{
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+}
+.col-8{
+    display: inline-block;
+    width: 69%;
 }
