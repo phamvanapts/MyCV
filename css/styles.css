@@ -1,7 +1,9 @@
 body {
     margin: 0px;
 }
-
+:root{
+    --color-primary:#2ab4d3;
+}
 .cv-document {
 	box-sizing: border-box;
 	border: none;
@@ -47,6 +49,16 @@ a{
 a:link:active, a:visited:active { 
     color: antiquewhite;
 }
+section{
+    display: flex;
+    gap: 20px;
+}
+section > *{
+    flex: 1;
+    padding: 10px;
+    border: 1px solid var(--color-primary);
+    border-radius: 5px;
+}
 .section{
     margin-bottom: 40px;
 }
@@ -55,12 +67,8 @@ a:link:active, a:visited:active {
     border-bottom: 3px solid #0e2425;
 }
 .section-content{
-    padding: 20px 0;
+    padding: 10px;
 }
-.section-content p{
-    padding: 3px 0;
-}
-
 /* CSS info */
 
 #info{
@@ -75,12 +83,15 @@ a:link:active, a:visited:active {
 }
 /* CSS content */
 .row{
-    border-bottom: 0.5px solid grey;
+    border-bottom: 0.5px solid var(--color-primary);
     padding-top: 10px;
     padding-bottom: 15px;
 
 }
-.col-4{
+.row :last-child{
+    border-bottom: none;
+}
+/* .col-4{
     display: inline-block;
     width: 30%;
     vertical-align: top;
@@ -88,7 +99,7 @@ a:link:active, a:visited:active {
 .col-8{
     display: inline-block;
     width: 69%;
-}
+} */
 
 /* CSS banner */
 .banner{
@@ -104,10 +115,29 @@ a:link:active, a:visited:active {
 .banner__title{
     position: absolute;
     font-family: arial, sans-serif, tahoma;
-    top: 80%;
-    left: 20%;
+    border-bottom: none;
+    top: 310px;
+    left: 290px;
     color: #2ab4d3;
+    z-index: 1;
+    padding-bottom: 50px;
 }
+/* CSS avatar */
+.banner__avatar{
+    position: absolute;
+    display: flex;
+    width: 170px;
+    height: 170px;
+    left: 200px;
+    transform: translateX(-50%);
+    top: 210px;
+    z-index: 1;
+}
+.banner__avatar img {
+    width: 170px;
+    border-radius: 50%;
+    border: 10px solid #2ab4d3;
+  }
 
 /* CSS Nav */
 nav{
@@ -117,28 +147,8 @@ nav{
     width: 100%;
     background-color: #fff;
     height: 50px;
-    font-family: arial, sans-serif, tahoma;
+    left: 20%;
 }
-nav .nav-brand{
-    position: relative;
-    pointer-events: none;
-    min-width: 200px;
-}
-nav .avatar{
-    position: absolute;
-    display: flex;
-    width: 170px;
-    height: 170px;
-    left: 50%;
-    transform: translateX(-50%);
-    top: -75px;
-    z-index: 1;
-}
-nav .avatar img {
-    width: 170px;
-    border-radius: 50%;
-    border: 10px solid #2ab4d3;
-  }
 nav * {
     flex: 1;
     text-align: center;
@@ -146,7 +156,15 @@ nav * {
     align-items: center;
     border-radius: 5px;
     padding: 5px;
+    font-family: arial, sans-serif, tahoma;
+    font-weight: bold;
+    font-size: 14pt;
+    color: #65666a;
+   
 }
 nav > *:hover{
     background-color: #2ab4d3;
+}
+#target{
+    /* background-color: #2ab4d3; */
 }
