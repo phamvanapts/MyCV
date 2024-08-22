@@ -1,7 +1,5 @@
 body {
-    
     margin: 0px;
-    
 }
 
 .cv-document {
@@ -16,7 +14,7 @@ body {
 	padding: 0;
 	width: 100%;
 	font-family: arial, sans-serif, tahoma;
-	font-size: 10pt;
+	font-size: 12pt;
 }
 
 .cv-page {
@@ -43,6 +41,11 @@ body {
 }
 a{
     text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+a:link:active, a:visited:active { 
+    color: antiquewhite;
 }
 .section{
     margin-bottom: 40px;
@@ -63,26 +66,13 @@ a{
 #info{
     position: relative;
 }
-#info h1{
-    color: #0e2425;
-    padding: 5px 0;
-    border-bottom: none;
-}
-#info img{
-    position: absolute;
-    width: 113px;
-    right: 0;
-}
-
 .info-row{
     padding: 5px 0;
 }
-
 .info-row > b{
     display: inline-block;
     width: 100px;
 }
-
 /* CSS content */
 .row{
     border-bottom: 0.5px solid grey;
@@ -114,30 +104,49 @@ a{
 .banner__title{
     position: absolute;
     font-family: arial, sans-serif, tahoma;
-    top: 50%;
-    left: 50%;
+    top: 80%;
+    left: 60%;
+    color: #2ab4d3;
 }
 
 /* CSS Nav */
-
 nav{
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    width: 100%;
+    background-color: #fff;
+    height: 50px;
+    font-family: arial, sans-serif, tahoma;
 }
+nav .nav-brand{
+    position: relative;
+    min-width: 200px;
+}
+nav .avatar{
+    position: absolute;
+    display: flex;
+    width: 150px;
+    height: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -75px;
+    z-index: 1;
+    pointer-events: none;
+}
+.avatar img {
+    width: 150px;
+    border-radius: 50%;
+    border: 10px solid #2ab4d3;
+  }
 nav * {
     flex: 1;
     text-align: center;
-    display: flex;
-    align-items: center;
-    height: 50px;
-    text-align: center;
     justify-content: center;
+    align-items: center;
     border-radius: 5px;
+    padding: 5px;
 }
 nav >*:hover{
     background-color: #2ab4d3;
-    color: #fff;
 }
