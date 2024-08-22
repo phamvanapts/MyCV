@@ -121,6 +121,7 @@ nav{
 }
 nav .nav-brand{
     position: relative;
+    pointer-events: none;
     min-width: 200px;
 }
 nav .avatar{
@@ -132,9 +133,8 @@ nav .avatar{
     transform: translateX(-50%);
     top: -75px;
     z-index: 1;
-    pointer-events: none;
 }
-.avatar img {
+nav .avatar img {
     width: 150px;
     border-radius: 50%;
     border: 10px solid #2ab4d3;
@@ -147,6 +147,6 @@ nav * {
     border-radius: 5px;
     padding: 5px;
 }
-nav >*:hover{
+nav > *:hover{
     background-color: #2ab4d3;
 }
