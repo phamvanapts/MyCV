@@ -94,7 +94,7 @@ a:link:active, a:visited:active {
 .banner{
     position: relative;
     background-image: url('../images/home-bg.jpg');   
-    height: 300px;
+    height: 346px;
 }
 .banner img{
     width: 100%;
@@ -105,7 +105,7 @@ a:link:active, a:visited:active {
     position: absolute;
     font-family: arial, sans-serif, tahoma;
     top: 80%;
-    left: 60%;
+    left: 20%;
     color: #2ab4d3;
 }
 
@@ -127,15 +127,15 @@ nav .nav-brand{
 nav .avatar{
     position: absolute;
     display: flex;
-    width: 150px;
-    height: 150px;
+    width: 170px;
+    height: 170px;
     left: 50%;
     transform: translateX(-50%);
     top: -75px;
     z-index: 1;
 }
 nav .avatar img {
-    width: 150px;
+    width: 170px;
     border-radius: 50%;
     border: 10px solid #2ab4d3;
   }
