@@ -91,7 +91,7 @@ section > *{
 .row :last-child{
     border-bottom: none;
 }
-/* .col-4{
+.col-4{
     display: inline-block;
     width: 30%;
     vertical-align: top;
@@ -99,7 +99,7 @@ section > *{
 .col-8{
     display: inline-block;
     width: 69%;
-} */
+}
 
 /* CSS banner */
 .banner{
