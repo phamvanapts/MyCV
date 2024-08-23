@@ -65,6 +65,7 @@ section > *{
 .section-title{
     padding-bottom: 5px;
     border-bottom: 3px solid #0e2425;
+    background-color: var(--color-primary);
 }
 .section-content{
     padding: 10px;
