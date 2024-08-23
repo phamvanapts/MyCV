@@ -159,12 +159,13 @@ nav * {
     font-family: arial, sans-serif, tahoma;
     font-weight: bold;
     font-size: 14pt;
-    color: #65666a;
+    color:#0e2425;
    
 }
 nav > *:hover{
     background-color: #2ab4d3;
 }
+
 #target{
     /* background-color: #2ab4d3; */
 }
