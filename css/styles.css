@@ -183,7 +183,7 @@ nav > *:hover{
     position: absolute;
     content: "\2022";
     font-size: 3rem;
-    left: -10px;
+    left: -9px;
     top: -7px;
     color: var(--color-primary);
 }
@@ -193,19 +193,31 @@ nav > *:hover{
 }
 
 /* CSS Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
 
-footer{
-    background-color: var(--color-sencond);
-}
-#contact{
-    padding-top: 20px;
-    padding-left: 40%;
-    
-}
-footer li, footer a{
-    color: #fff;
-}
-footer li{
+.footer-menu {
     list-style: none;
-    padding: 5px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Căn giữa các mục trong footer */
+}
+
+.footer-menu li {
+    margin: 15px; /* Khoảng cách giữa các mục */
+}
+
+.footer-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-menu a:hover {
+    text-decoration: underline; /* Hiệu ứng khi di chuột */
 }
