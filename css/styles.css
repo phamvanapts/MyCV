@@ -76,6 +76,10 @@ section > *{
 .section-content{
     padding: 10px;
 }
+.title{
+    text-transform: uppercase;
+    font-weight: bold;
+}
 /* CSS info */
 
 #info{
@@ -90,9 +94,10 @@ section > *{
 }
 /* CSS content */
 .row{
-    border-bottom: 0.5px solid var(--color-primary);
+    /* border-bottom: 0.5px solid var(--color-primary); */
     padding-top: 10px;
     padding-bottom: 15px;
+    /* border-left: 1px solid #000; */
 
 }
 .row :last-child{
