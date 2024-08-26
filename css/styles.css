@@ -66,8 +66,6 @@ section > *{
     display: flex;
     padding-bottom: 5px;
     border-bottom: 3px solid #0e2425;
-    justify-content: space-between;
-    text-transform: uppercase;
 }
 .section-content{
     padding: 10px;
@@ -162,13 +160,14 @@ nav * {
     font-family: arial, sans-serif, tahoma;
     font-weight: bold;
     font-size: 14pt;
-    color: #65666a;
+    color:#0e2425;
    
 }
 nav > *:hover{
     background-color: #2ab4d3;
     color: white;
 }
+
 #target{
     text-align: justify;
     /* padding-top: 2px; */
