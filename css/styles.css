@@ -196,7 +196,25 @@ nav > *:hover{
     text-align: justify;
     /* padding-top: 2px; */
 }
-
+/* CSS certificate */
+#certificate .section-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+.card{
+    display: flex;
+    gap: 10px;
+    border-bottom: 0.5px solid var(--color-sencond);
+    padding: 20px 0;
+}
+.card img{
+    flex: 0.3;
+}
+.card--text{
+    flex: 0.7;
+    /* padding-left: 10px; */
+}
 /* CSS Footer */
 footer {
     background-color: #333;
