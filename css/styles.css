@@ -86,15 +86,6 @@ section > *{
     display: inline-block;
     width: 100px;
 }
-.col-4{
-    display: inline-block;
-    width: 30%;
-    vertical-align: top;
-}
-.col-8{
-    display: inline-block;
-    width: 69%;
-}
 
 /* CSS banner */
 .banner{
@@ -112,8 +103,9 @@ section > *{
     position: absolute;
     font-family: arial, sans-serif, tahoma;
     border-bottom: none;
-    top: 300px;
+    top: 430px;
     left: 250px;
+    font-weight: bold;
     /* color: #2ab4d3; */
     z-index: 1;
     padding-bottom: 55px;
@@ -126,13 +118,12 @@ section > *{
     height: 170px;
     left: 150px;
     transform: translateX(-50%);
-    top: 200px;
-    z-index: 1;
+    top: 346px;    z-index: 1;
 }
 .banner__avatar img {
     width: 170px;
     border-radius: 50%;
-    border: 10px solid #2ab4d3;
+    border: 10px solid var(--color-primary);
   }
 
 /* CSS Nav */
@@ -151,7 +142,7 @@ nav * {
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-    padding: 5px;
+    /* padding: 5px; */
     font-family: arial, sans-serif, tahoma;
     font-weight: bold;
     font-size: 14pt;
@@ -160,7 +151,7 @@ nav * {
 }
 nav > *:hover{
     background-color: #2ab4d3;
-    color: white;
+    /* color: white; */
 }
 /* CSS experience */
 .timeline .section-content{
@@ -172,8 +163,8 @@ nav > *:hover{
     position: absolute;
     content: "\2022";
     font-size: 3rem;
-    left: -9px;
-    top: -7px;
+    left: -11px;
+    top: -20px;
     color: var(--color-primary);
 }
 #target{
@@ -183,21 +174,21 @@ nav > *:hover{
 /* CSS certificate */
 #certificate .section-content{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 2fr);
     grid-gap: 20px;
 }
-.card{
+.card-c{
     display: flex;
     gap: 10px;
     border-bottom: 0.5px solid var(--color-sencond);
     padding: 20px 0;
 }
-.card img{
+.card-c img{
     flex: 0.3;
 }
-.card--text{
-    flex: 0.7;
-    /* padding-left: 10px; */
+.card-c .card--text{
+    flex: 0.6;
+    padding-left: 10px;
 }
 /* CSS Footer */
 footer {
