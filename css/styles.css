@@ -90,13 +90,13 @@ section > *{
 /* CSS banner */
 .banner{
     position: relative;
-    background-image: url('../images/home-bg.jpg');   
+    /* background-image: url('../images/home-bg.jpg');    */
     height: 500px;
 }
 .banner img{
     width: 100%;
     height: 100%;
-    top: -120px;
+    top: 20px;
     object-fit: cover;
 }
 .banner__title{
