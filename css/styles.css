@@ -44,20 +44,18 @@ body {
 }
 a{
     text-decoration: none;
-    padding: 0;
-    margin: 0;
 }
 a:link:active, a:visited:active { 
     color: antiquewhite;
 }
 section{
     display: flex;
-    gap: 20px;
+    /* gap: 20px; */
 }
 section > *{
     flex: 1;
     padding: 10px;
-    border: 1px solid var(--color-primary);
+    /* border: 1px solid var(--color-primary); */
     border-radius: 5px;
 }
 .section{
@@ -70,7 +68,7 @@ section > *{
     font-weight: bold;
     text-transform: uppercase;
     justify-content: space-between; /* Canh chỉnh text và icon điều nhau*/
-    color: var(--color-primary);
+    /* color: var(--color-primary); */
 
 }
 .section-content{
@@ -81,27 +79,12 @@ section > *{
     font-weight: bold;
 }
 /* CSS info */
-
-#info{
-    position: relative;
-}
 .info-row{
     padding: 5px 0;
 }
 .info-row > b{
     display: inline-block;
     width: 100px;
-}
-/* CSS content */
-.row{
-    /* border-bottom: 0.5px solid var(--color-primary); */
-    padding-top: 10px;
-    padding-bottom: 15px;
-    /* border-left: 1px solid #000; */
-
-}
-.row :last-child{
-    border-bottom: none;
 }
 .col-4{
     display: inline-block;
@@ -117,22 +100,23 @@ section > *{
 .banner{
     position: relative;
     background-image: url('../images/home-bg.jpg');   
-    height: 346px;
+    height: 500px;
 }
 .banner img{
     width: 100%;
     height: 100%;
+    top: -120px;
     object-fit: cover;
 }
 .banner__title{
     position: absolute;
     font-family: arial, sans-serif, tahoma;
     border-bottom: none;
-    top: 310px;
-    left: 290px;
-    color: #2ab4d3;
+    top: 300px;
+    left: 250px;
+    /* color: #2ab4d3; */
     z-index: 1;
-    padding-bottom: 50px;
+    padding-bottom: 55px;
 }
 /* CSS avatar */
 .banner__avatar{
@@ -140,9 +124,9 @@ section > *{
     display: flex;
     width: 170px;
     height: 170px;
-    left: 200px;
+    left: 150px;
     transform: translateX(-50%);
-    top: 210px;
+    top: 200px;
     z-index: 1;
 }
 .banner__avatar img {
@@ -158,8 +142,8 @@ nav{
     align-items: center;
     width: 100%;
     background-color: #fff;
-    height: 50px;
-    left: 20%;
+    /* height: 50px;
+    left: 20%; */
 }
 nav * {
     flex: 1;
@@ -171,7 +155,7 @@ nav * {
     font-family: arial, sans-serif, tahoma;
     font-weight: bold;
     font-size: 14pt;
-    color:#0e2425;
+    /* color:#0e2425; */
    
 }
 nav > *:hover{
@@ -219,7 +203,7 @@ nav > *:hover{
 footer {
     background-color: #333;
     color: white;
-    padding: 20px;
+    /* padding: 20px; */
     text-align: center;
 }
 
